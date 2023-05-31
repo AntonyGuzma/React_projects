@@ -1,0 +1,86 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(black, #212b46);
+}
+
+.tittle{
+    font-size: 80px;
+    color: white;
+    animation: fliptitle 2s;
+}
+
+@keyframes fliptitle{
+    from{
+        transform: rotateX(90deg);
+    }to{
+        transform: rotateX(0deg);
+    }
+}
+
+.containerInput{
+    background-color: rgba(255,255,255,0.2);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px black;
+}
+
+.containerInput input{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    margin-right: 8px;
+}
+
+.containerInput input::placeholder{
+    color: white;
+}
+
+.buttonSearch{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+.main h2{
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.main span{
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 620px){
+    .tittle{
+        font-size: 40px;
+    }
+
+    .main h2{
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .main{
+        width: 80%;
+    }
+}
